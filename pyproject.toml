@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cebrameta-avatar"
+version = "0.1.0"
+description = "Herramientas para generar avatares hablantes a partir de imagen fija y guion."
+requires-python = ">=3.9"
+readme = "README.md"
+authors = [
+  {name = "Cebrameta"}
+]
+dependencies = [
+  "edge-tts>=6.1",
+  "typer>=0.9",
+]
+
+[project.scripts]
+cebrameta-avatar = "avatar_pipeline.cli:app"
