@@ -1,0 +1,3 @@
+# The automated execution environment for this kata is offline, so the backend
+# pipeline and tests rely solely on the Python standard library plus pytest.
+pytest>=8.0
